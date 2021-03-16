@@ -1,0 +1,36 @@
+* {
+    text-align: center;
+    background-color:lightblue;
+    background-image: linear-gradient(to right, rgb(250, 249, 249), rgb(109, 255, 243))
+    
+}
+
+h1 {
+    background-image: linear-gradient(to bottom right, lightblue, purple);
+   color:palegreen;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ li:nth-child(1) {
+   color:#088169;
+ }
+
+ li:nth-child(2)
+ {
+    color:#EB856D;
+ }
+
+ li:nth-child(3)
+
+{
+color:  #BF1003;
+}
+
+ li:nth-child(4)
+{
+   color:   #FFAB4C;
+}
+
