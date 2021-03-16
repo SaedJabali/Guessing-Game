@@ -61,3 +61,76 @@ else if (Where.toLowerCase() === 'no' || Where.toUpperCase() === 'N'); {
 }
 
 
+let i = 0;
+let num = Number(prompt('Guess a number from 0 to 10?'));
+while (i < 4) {
+  if (num === 5) {
+    alert('good');
+    break;
+  }
+  else if (num < 5) {
+    alert('too low');
+    num = Number(prompt('Guess a number from 0 to 10?'));
+    i++;
+    continue;
+  }
+
+  else if (num > 5) {
+    alert('too high');
+    num = Number(prompt('Guess a number from 0 to 10?'));
+
+    i++;
+    continue;
+  }
+}
+
+if (i === 4) {
+  alert('you are out of guessing');
+}
+
+
+
+
+
+let y = 0;
+let arrMe = ['darksouls', 'lol', 'needforspeed', 'bloodborne'];
+let guessGame = prompt('Guess a game.');
+while (guessGame !== arrMe[0] && guessGame !== arrMe[1] && guessGame !== arrMe[2] && guessGame !== arrMe[3] && y < 5) {
+  alert( guessGame +'is not one of my games');
+  guessGame = prompt('Guess a game.');
+  y++;
+}
+if (guessGame === arrMe[0] || guessGame === arrMe[1] || guessGame === arrMe[2] || guessGame === arrMe[3]) {
+  alert('Good Guessing. My games are : ' + arrMe);
+} else {
+  if (y === 5) {
+    alert('Sorry you are out of trials. My games are : ' + arrMe);
+  }
+}
+
+
+let score = 0;
+if (place.toLocaleLowerCase() === 'no' || place.toLocaleLowerCase() === 'n') {
+  score++;
+}
+if (sport.toLocaleLowerCase() === 'yes' || sport.toLocaleLowerCase() === 'y') {
+  score++;
+}
+if (pic.toLocaleLowerCase() === 'yes' || pic.toLocaleLowerCase() === 'y') {
+  score++;
+
+  if (mind.toLocaleLowerCase() === 'no' || mind.toLocaleLowerCase() === 'n') {
+    score++;
+  }
+  if (Where.toLocaleLowerCase() === 'yes' || Where.toLocaleLowerCase() === 'y') {
+    score++;
+  }
+  if (num === '5') {
+    score++;
+  }
+  if (guessGame === arrMe[0] || guessGame === arrMe[1] || guessGame === arrMe[2] || guessGame === arrMe[3]) {
+    score++;
+  }
+  alert('You have answered ' + score + ' correct answeres out of 7.');
+  alert('Thank you ' + user + ' Hope you enjoed the game.');
+}
