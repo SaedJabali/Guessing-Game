@@ -1,36 +1,55 @@
-* {
+header {
     text-align: center;
-    background-color:lightblue;
-    background-image: linear-gradient(to right, rgb(250, 249, 249), rgb(109, 255, 243))
+  color: #BF1003;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+body {
+    margin-left:2in;
+    margin-right:2in;
+    text-align: center;
+    align-content: center;
+    background-image: url(https://st4.depositphotos.com/2769299/31502/i/600/depositphotos_315021120-stock-photo-rays-light-pass-smoke-abstract.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main {
+    height: 960px;
+}
+​
+main h1 {
     
-}
-
-h1 {
-    background-image: linear-gradient(to bottom right, lightblue, purple);
    color:palegreen;
+   padding-top: 10px;
+    padding-bottom: 10px;
 }
 
+​
 ul{
     list-style-type: none;
+    line-height: 7vh;
 }
-
+​
  li:nth-child(1) {
    color:#088169;
+   line-height: 7vh;
  }
-
+​
  li:nth-child(2)
  {
     color:#EB856D;
  }
-
+​
  li:nth-child(3)
-
+​
 {
 color:  #BF1003;
+line-height: 7vh;
 }
-
+​
  li:nth-child(4)
 {
    color:   #FFAB4C;
+   line-height: 7vh;
 }
 

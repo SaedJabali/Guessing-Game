@@ -2,7 +2,6 @@
 
 let user = prompt('Hello, can you please enter your name');
 
-console.log('I asked the user about his name');
 alert('You are welcome_' + user);
 
 alert('Shall we play a game but please answer with (yes/y or no/n) ');
